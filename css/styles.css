@@ -20,7 +20,7 @@ body.light{
   background: var(--background-ligth);
 }
 
-.conteiner{
+.container{
   width: 100%;
   max-width: 1100px;
   margin-left: 10vw;
@@ -35,6 +35,7 @@ body.light{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 10px 0 20px;
 }
 
 .menu__h1{
@@ -50,7 +51,9 @@ body.light{
 .menu__toggle{
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
+
 
 .checkbox{
   opacity: 0;
@@ -58,7 +61,6 @@ body.light{
 }
 
 .label{
-  background: linear-gradient(to right, #345e88 10%, #3eda82 90%);
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -68,12 +70,28 @@ body.light{
   position: relative;
 }
 
+.label--dark{
+  background: linear-gradient(to right, #345e88 10%, #3eda82 90%);
+}
+
+.label--light{
+  background: hsl(230, 22%, 74%);
+}
+
 .ball{
-  background: #343957;
   border-radius: 50%;
   height: 20px;
   width: 20px;
   position: absolute;
+  transition: 200ms linear;
+}
+
+.ball--dark{
+  background: #343957;
+}
+
+.ball--light{
+  background: #fff;
 }
 
 .checkbox:checked + .label .ball{
@@ -96,7 +114,7 @@ body.light{
 }
 
 .card{
-  background: #252a41;
+  
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -107,15 +125,20 @@ body.light{
   overflow: hidden;
 }
 
-.card--light{
-  background: #f0f2fa;
+.card--dark, .box--dark{
+  background: #252a41;
 }
 
-.card--light:hover{
-  
+.card--light, .box--light{
+  background: #f0f2fa; 
 }
 
-.card:hover, .box:hover{
+.card--light:hover, .box--light:hover{
+  background-color: #e1e3f0;
+  cursor: pointer;
+}
+
+.card--dark:hover, .box--dark:hover{
   background-color: #333a56;
   cursor: pointer;
 }
@@ -125,10 +148,14 @@ body.light{
   font-weight: 600;
 }
 
-.card__second, .box__second{
+.card__second{
   color: #fff;
   font-weight: 700;
   font-size: 50px;
+}
+
+.card__second--ligth{
+  color: #000;
 }
 
 .card__third{
@@ -172,6 +199,7 @@ body.light{
   color: #fff;
   font-size: 25px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .second__h1--light{
@@ -185,10 +213,10 @@ body.light{
 }
 
 .box{
-  background-color: #252a41;
   border-radius: 8px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
   margin-bottom: 25px;
   height: 125px;
   width: 255px;
@@ -196,7 +224,22 @@ body.light{
 
 .box__second{
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
+}
+
+.box__second--ligth{
+  color: #000;
+}
+
+.box__center--1, .box__center--2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box__img{
+  height: 30px;
+  width: 30px;
 }
 

@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/styles.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: #3e52a3; }
@@ -19,7 +19,7 @@
 <body>
  
   <header class="header">
-    <section class="conteiner">
+    <section class="container">
       <div class="menu">
       <div class="menu__title">
         <h1 class="menu__h1 menu__h1--light">Social Media Dashboard</h1>
@@ -29,8 +29,8 @@
     <div class="menu__toggle">
       <p>Dark Mode</p>
       <input class="checkbox" type="checkbox" name="switcher" id="checkbox" >
-        <label class="label" for="checkbox">
-          <div class="ball"></div>
+        <label class="label label--dark" for="checkbox">
+          <div class="ball ball--dark"></div>
         </label>
     </div>
   </div>
@@ -38,33 +38,33 @@
   </header>
   
   <section class="first first--light">
-    <section class="conteiner">
+    <section class="container">
       <main class="cards">
-      <div class="card card--light card--face">
+      <div class="card card--dark card--face">
         <p class="card__first">@nathanf</p>
         <p class="card__second">1987</p> 
         <p class="card__third">FOLLOWERS</p>
         <p class="card__color--green">12 Today</p>
       </div>
 
-      <div class="card card--light card--tt">
+      <div class="card card--dark card--tt">
         <p class="card__first">@nathanf</p>
         <p class="card__second">1044</p>
         <p class="card__third">FOLLOWERS</p>
         <p class="card__color--green">99 Today</p>
       </div>
       
-      <div class="card card--light card--insta">
+      <div class="card card--dark card--insta">
         <p class="card__first">@realnathanf</p>
         <p class="card__second">11k</p>
         <p class="card__third">FOLLOWERS</p>
         <p class="card__color--green">1099 Today</p>
       </div>
 
-      <div class="card card--light card--yt">
+      <div class="card card--dark card--yt">
         <p class="card__first">Nathan F.</p>
         <p class="card__second">8239</p>
-        <p class="card__third">SUBCRIBES</p>
+        <p class="card__third">SUBSCRIBES</p>
         <p class="box__color--red">144 Today</p>
       </div>
       </main>
@@ -72,56 +72,96 @@
   </section>
 
   <section class="second">
-    <section class="conteiner">
+    <section class="container">
         <h1 class="second__h1">Overview - Today</h1>
 
         <main class="cards--2">
-        <div class="box">
-          <p class="box__first">Page Views</p>
-          <p class="box__second">87</p>
-          <p class="box__third box__color--green">3%</p>
+        <div class="box box--dark">
+          <div class="box__center--1">
+            <p class="box__first">Page Views</p>
+            <img class="box__img" src="./images/icon-facebook.svg" alt="Facebook">
+          </div>
+          <div class="box__center--2">
+            <p class="box__second">87</p>
+            <p class="box__third box__color--green">3%</p>
+          </div>
         </div>
 
-        <div class="box">
-          <p class="box__first">Likes</p>
-          <p class="box__second">52</p>
-          <p class="box__third box__color--red">2%</p>
+        <div class="box box--dark">
+          <div class="box__center--1">
+            <p class="box__first">Likes</p>
+            <img class="box__img" src="./images/icon-facebook.svg" alt="Facebook">
+          </div>
+          <div class="box__center--2">
+            <p class="box__second">52</p>
+            <p class="box__third box__color--red">2%</p>
+          </div>
         </div>
 
-        <div class="box">
-          <p class="box__first">Likes</p>
-          <p class="box__second">5462</p>
-          <p class="box__third box__color--green">2257%</p>
+        <div class="box box--dark">
+          <div class="box__center--1">
+            <p class="box__first">Likes</p>
+            <img class="box__img" src="./images/icon-instagram.svg" alt="Instagram">
+          </div>
+          <div class="box__center--2">
+            <p class="box__second">5462</p>
+            <p class="box__third box__color--green">2257%</p>
+          </div>
         </div>
 
-        <div class="box">
-          <p class="box__first">Profile Views</p>
-          <p class="box__second">52k</p>
-          <p class="box__third box__color--green">1375%</p>
+        <div class="box box--dark">
+          <div class="box__center--1">
+            <p class="box__first">Profile Views</p>
+            <img class="box__img" src="./images/icon-instagram.svg" alt="Instagram">
+          </div>
+          <div class="box__center--2">
+            <p class="box__second">52k</p>
+            <p class="box__third box__color--green">1375%</p>
+          </div>
         </div>
 
-        <div class="box">
-          <p class="box__first">Retweets</p>
-          <p class="box__second">117</p>
-          <p class="box__third box__color--green">303%</p>
+        <div class="box box--dark">
+          <div class="box__center--1">
+            <p class="box__first">Retweets</p>
+            <img class="box__img" src="./images/icon-twitter.svg" alt="Twitter">
+          </div>
+          <div class="box__center--2">
+            <p class="box__second">117</p>
+            <p class="box__third box__color--green">303%</p>
+          </div>
         </div>
 
-        <div class="box">
-          <p class="box__first">Likes</p>
-          <p class="box__second">507</p>
-          <p class="box__third box__color--green">553%</p>
+        <div class="box box--dark">
+          <div class="box__center--1">
+            <p class="box__first">Likes</p>
+            <img class="box__img" src="./images/icon-twitter.svg" alt="Twitter">
+          </div>
+          <div class="box__center--2">
+            <p class="box__second">507</p>
+            <p class="box__third box__color--green">553%</p>
+          </div>
         </div>
 
-        <div class="box">
-          <p class="box__first">Likes</p>
-          <p class="box__second">107</p>
-          <p class="box__third box__color--red">19%</p>
+        <div class="box box--dark">
+          <div class="box__center--1">
+            <p class="box__first">Likes</p>
+            <img class="box__img" src="./images/icon-youtube.svg" alt="Youtube">
+          </div>
+          <div class="box__center--2">
+            <p class="box__second">107</p>
+            <p class="box__third box__color--red">19%</p>
+          </div>
         </div>
         
-        <div class="box">
-          <p class="box__first">Total Views</p>
-          <p class="box__second">1407</p>
-          <p class="box__third box__color--red">12%</p>
+        <div class="box box--dark">
+          <div class="box__center--1">
+            <p class="box__first">Total Views</p>
+            <img class="box__img" src="./images/icon-youtube.svg" alt="Youtube">
+          </div>
+          <div class="box__center--2">
+            <p class="box__second">1407</p>
+            <p class="box__third box__color--red">12%</p>
+          </div>
         </div>
       </main>
     </section>
